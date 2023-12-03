@@ -1,0 +1,57 @@
+* {
+    padding:0px;
+    margin:0px;
+    border:0px;
+}
+
+i {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: rgb(247, 247, 247)
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto 0;
+    padding: 20px 40px 40px 40px;
+    background-color: #fff;
+}
+
+#get_data {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+  
+#get_data:hover {
+    background-color: #2b80b8;
+}
+
+.age, .bmi, .statistics, .diabetes {
+    margin: 0 40px 40px 0;
+    border-collapse: collapse;
+}
+  
+.age td, .age th, .bmi td, .bmi th, .statistics td, .statistics th, .diabetes th, .diabetes td {
+    border: 1px solid black;
+    padding: 8px;  
+}

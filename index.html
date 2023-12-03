@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en", style="margin: 0; padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <div class="content">
+        <button id="get_data">Click Here to Request Data</button>
+        <!-- Age -->
+        <p>Age groups</p>
+        <div width="300" height="300" style="float: right; margin-top: -50px;">
+            <canvas id="age_chart" width="300" height="300"></canvas>
+        </div>
+        <table class="age">
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Diabetes Rate(%)</th>
+                </tr>
+            </thead>
+            <tbody class="age_body"></tbody>
+        </table>
+        
+        <!-- Bmi -->
+        <i></i>
+        <p>Bmi groups</p>
+        <div width="300" height="300" style="float: right; margin-top: -50px;">
+            <canvas id="bmi_chart" width="300" height="300"></canvas>
+        </div>
+        <table class="bmi">
+            <thead>
+                <tr>
+                    <th>Bmi range</th>
+                    <th>Diabetes Rate(%)</th>
+                </tr>
+            </thead>
+            <tbody class="bmi_body"></tbody>
+        </table>
+        <!-- Statistics -->
+        <i></i>
+        <p>Statistics groups</p>
+        <table class="statistics">
+            <thead>
+                <tr>
+                    <th>Gender</th>
+                    <th>Diabetes Rate(%)</th>
+                </tr>
+            </thead>
+            <tbody class="statistics_body"></tbody>
+        </table>
+        <!-- Diabetes -->
+        <i></i>
+        <p>First 10 rows of all diabetes data </p>
+        <table class="diabetes">
+            <thead>
+                <tr>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Smoking History</th>
+                    <th>Bmi</th>
+                    <th>HbA1c Level</th>
+                    <th>Blood Glucose Level</th>
+                    <th>Diabetes</th>
+                </tr>
+            </thead>
+            <tbody class="diabetes_body"></tbody>
+        </table>
+    </div>
+</body>
+</html>

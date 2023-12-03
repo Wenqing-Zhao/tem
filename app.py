@@ -1,7 +1,7 @@
 import json
 from decimal import Decimal
 import psycopg2
-from flask import Flask
+from flask import Flask, render_template
 from flask_cors import CORS, cross_origin
 
 # connect to redshift
@@ -62,13 +62,17 @@ data = {
     "diabetes": diabetes
 }
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 CORS(app, supports_credentials=True)
 
-@app.route('/get_data', methods=['GET'])
+@app.route("/get_data", methods=["GET"])
 @cross_origin()
 def get_data():
     return data
 
-if __name__ == '__main__':
-    app.run()
+@app.route("/", methods=["GET"])
+def index():
+    return render_template('index.html')
+
+if __name__ == "__main__":
+    app.run(host="34.254.91.76", port=5000)

@@ -6,7 +6,6 @@ $(document).ready(() => {
             url: 'http://34.254.91.76:5000/get_data',
             method: 'GET',
             success: function(response) {
-                console.log(response["age"])
                 // Age
                 for(var i=0;i<response["age"].length;i++){
                     var row = '<tr>' +
